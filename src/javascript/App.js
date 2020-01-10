@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { jsCounter as Counter } from "../output/Counter.Interop";
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Counter label="Dinero"/>
+      <Counter />
     </div>
   );
 }
